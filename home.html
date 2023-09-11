@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<title>Find recipes</title>
+	<link href="./css/mystyles.css" rel="stylesheet" />
+</head>
+<body>
+	<!-- Header-->
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Random recipe finder</h1>
+                <p class="lead">Input the ingredients you have and find the perfect recipes</p>
+                <a class="btn btn-lg btn-light" href="#about">Let's get to it</a>
+            </div>
+        </header>
+    <!--input ingredients and get random recipe-->    
+        
+    	<p>Type ingredients and have a random recipe generated</p>
+        <div class="justify-content-center">
+            <div class="text-center">
+                		<form autocomplete="off">
+                			<div class="autocomplete" style="width:300px;">
+                				<input type="text" id = "ingredient">
+                			</div>
+                				<input type="submit" id="ingsubmit" onclick="return false">
+                		</form>
+            </div>
+            <div class=" text-center" style = "width:50 px;">
+            	<br/>
+                	<div id="chosenIngredients">sdsdfs's what you chose:</div>
+                	<br/>
+                	<input type="submit" id="listsubmit" onclick="return false"/>
+                <div id="log" style="background-color: yellow"></div><br>
+            </div>
+        </div>
+    
+   	<!--extract recipe from website link-->
+   </br></br></br>
+   		<div class="justify-content-center" id="extract"  style="background-color: lightgreen; height:700px" class="justify-content-center">
+   			</br></br></br>
+   			<p> Enter a website URL and decide the yield</p>
+   			</br></br></br>
+   			<div class="container px-4">
+   				<div class="row gx-4 justify-content-center">
+		   			<div class="col-6 text-center">
+		   				<form autocomplete="off">
+                			<div class="autocomplete" style="width:300px;">
+                				<input type="text" id = "recipeurl">
+                			</div>
+                				<input type="submit" id="recipesubmit" onclick="return false">
+                		</form>
+		   			</div>
+		   			<div class="col-6  text-center" id="ingfromrecipe">
+		   				<p>Here's the list of ingredients</p>
+		   				<p id="recipeinfo"></p>
+		   			</div>
+	   			</div>
+	   		</div>
+   		</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<script src="./js/myjs.js"></script>
+ 	
+</body>
+
+</html>
